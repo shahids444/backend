@@ -1,5 +1,5 @@
 import express from 'express';
-import FormData from '../models/FormData.js';
+import FormData from '../models/formData.js';
 
 const router = express.Router();
 
