@@ -5,14 +5,14 @@ import cors from 'cors';
 import formRoutes from './routes/formRoutes.js';
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(bodyParser.json());
 app.use(cors());
 
 // MongoDB connection
-mongoose.connect("mongodb+srv://shaik:shaik@shaik.tinevrk.mongodb.net/formDB?retryWrites=true&w=majority&appName=shaik", {
+mongoose.connect("mongodb+srv://shaik:shaik@shaik.tinevrk.mongodb.net/Newdb?retryWrites=true&w=majority&appName=shaik", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
